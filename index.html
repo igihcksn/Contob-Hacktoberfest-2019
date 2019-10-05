@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/css/select2.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/js/select2.min.js"></script>
+</head>
+
+<body>
+
+  <div class="tabs is-centered">
+    <ul>
+      <li class="is-active">
+        <a href="/">
+          <span class="icon is-small"><i class="fas fa-check-double"></i></span>
+          <span>Generate</span>
+        </a>
+      </li>
+      <li>
+        <a href="/about.html">
+          <span class="icon is-small"><i class="fab fa-github-alt"></i></span>
+          <span>About</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <form id="cari">
+      <div class="columns is-mobile">
+        <div class="column">
+          <div class="field">
+            <div class="control">
+              <input class="input" type="text" placeholder="Username" name="username" required>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="is-fullwidth">
+            <select name="country" id="country">
+            </select>
+          </div>
+        </div>
+        <div class="column">
+          <div class="control">
+            <button class="button is-primary is-centered">Submit</button>
+          </div>
+        </div>
+      </div>
+    </form>
+    <p id="result" class="pt-3"></p>
+
+    <div class="columns is-multiline is-mobile pt-3 pb-3" id="contributors">
+
+    </div>
+  </div>
+
+  <footer class="footer is-fixed-bottom">
+    <div class="content has-text-centered">
+      <p>
+        <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
+        <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+        is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+      </p>
+    </div>
+  </footer>
+
+  <script src="assets/js/custom.js"></script>
+</body>
+
+</html>
